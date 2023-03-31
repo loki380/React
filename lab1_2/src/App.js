@@ -1,18 +1,20 @@
-import './App.css';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+import "./App.css";
+import Content from "./components/Content/Content";
+import NavBar from "./components/NavBar/NavBar";
+import SideBar from "./components/SideBar/SideBar";
 
 function App() {
-  return (
-    <div className="App">
-    <Container>
-      <Row>
-        <Col>1 of 1</Col>
-      </Row>
-    </Container>
-    </div>
-  );
+    return (
+        <div class="row g-0">
+            <div class="col-2">
+                <SideBar />
+            </div>
+            <div class="col m-3">
+                <NavBar />
+                <Content />
+            </div>
+        </div>
+    );
 }
 
 export default App;
