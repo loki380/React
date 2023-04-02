@@ -2,7 +2,7 @@ import React from "react";
 
 function NavBar() {
     return (
-        <div class="bg-light p-3 ">
+        <div class="bg-light shadow w-100 p-3">
             <form class="d-flex">
                 <input
                     class="form-control me-2"
