@@ -2,7 +2,7 @@ import React from "react";
 
 function NavBar() {
     return (
-        <div class="bg-light shadow w-100 p-3">
+        <div class="box bg-white shadow w-100 p-3 mb-4">
             <form class="d-flex">
                 <input
                     class="form-control me-2"
@@ -10,7 +10,7 @@ function NavBar() {
                     placeholder="Search"
                     aria-label="Search"
                 />
-                <button class="btn btn-outline-success" type="submit">
+                <button class="btn" type="submit">
                     Search
                 </button>
             </form>

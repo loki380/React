@@ -7,7 +7,7 @@ function App() {
   return (
     <div class="d-flex vh-100">
       <SideBar/>
-      <div class="d-flex flex-column w-100">
+      <div class="d-flex flex-column w-100 p-3">
         <NavBar />
         <Content />
       </div>
