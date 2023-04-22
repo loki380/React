@@ -54,9 +54,7 @@ export default function ThemeContextWrapper(props) {
             default:
                 break;
         }
-        console.log(document.body.style.fontSize);
-        console.log(fontSize);
-        document.body.style.fontSize = fontSize + 'px';
+        document.documentElement.style.fontSize = fontSize + 'px';
     }, [theme, fontSize]);
 
     return (

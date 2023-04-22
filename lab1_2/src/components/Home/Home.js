@@ -3,8 +3,9 @@ import PersonInfo from "./PersonInfo/PersonInfo";
 import Payments from "./Payments/Payments";
 import Profit from "./Profit/Profit";
 import Transactions from "./Transactions/Transactions";
+import "./Home.css";
 
-function Content() {
+function Home() {
     return (
         <div class="d-flex flex-row flex-wrap justify-content-between align-items-baseline gap-4">
             <PersonInfo />
@@ -15,4 +16,4 @@ function Content() {
     );
 }
 
-export default Content;
+export default Home;

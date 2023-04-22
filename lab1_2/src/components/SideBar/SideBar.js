@@ -2,6 +2,7 @@ import React from "react";
 import "./SideBar.css";
 import { ThemeContext, themes } from "../../contexts/ThemeContext";
 import logo from "../../assets/img/logo.png";
+import { BrowserRouter, Link } from "react-router-dom";
 
 function SideBar() {
     return (
@@ -11,21 +12,22 @@ function SideBar() {
             </div>
             <ul class="nav flex-column">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">
-                        Dashboard
-                    </a>
+                    <Link to="/" class="nav-link">
+                        Home
+                    </Link>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">
-                        Layouts
-                    </a>
+                    <Link to="/about" class="nav-link">
+                        About
+                    </Link>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">
-                        Cards
-                    </a>
+                    <Link to="/contact" class="nav-link">
+                        Contact
+                    </Link>
                 </li>
             </ul>
+            <hr/>
             <ThemeContext.Consumer>
                 {({ changeTheme, incrementFont, decrementFont }) => (
                     <div className="d-flex flex-column">
